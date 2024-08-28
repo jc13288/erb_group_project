@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-hk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/logobga.jpg"> 
+    <link rel="stylesheet" href="./css/login.css">
+    <meta name="description" content="培育教育中心提供優質的幼兒親子Playgroup課程，幫助孩子平穩過渡到學前教育階段。我們在九龍黃埔、香港島康怡和新界粉嶺設有分校。"> 
+    <meta name="keywords" content="培育教育中心, 幼兒親子Playgroup課程, 學前教育, 九龍黃埔, 香港島康怡, 新界粉嶺">
+    <title>登入頁面</title>
+</head>
+     <body>
+        <div class="container">
+           <div class="header">
+           <div class="headers"><img src="./images/logo.png" alt=""></div>  
+           <div class="h2"><h2>登入頁面</h2></div> 
+           </div>
+            <form action="#"  id="loginForm">
+                <div class="form-group">
+                    <label for="login">登入名稱</label>
+                    <input 
+                        type="text" 
+                        id="login" 
+                        name="login"
+                        placeholder="輸入登入名稱" 
+                        minlength="6"
+                        maxlength="10"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="password">登入密碼</label>
+                    <input  
+                        type="password" 
+                        id="password" 
+                        name="password"
+                        placeholder="輸入登入密碼"
+                        minlength="8"
+                        maxlength="15"
+                        required 
+                    />
+                </div>
+                <div class="btn-group">
+                    <div class="form-group">
+                        <input type="button" id="login_btn" value="登入">
+                    </div>
+                    <div class="form-group">
+                        <a href="./register.html">
+                            <button type="button">登記頁面</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="link-group">
+                    <div> <a href="./forgot-password.html">忘記密碼?</a></div>
+                    <div> <a href="./index.html">回主頁</a></div>
+                </div>
+                <div id="error-message"></div>
+            </form>
+        </div>
+        <script src="./javascript/javascript.js"></script>
+    </body>
+</html>

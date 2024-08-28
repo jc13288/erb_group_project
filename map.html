@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-hk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/map.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="./images/logobga.jpg">
+    <meta name="description" content="我們提供專業的幼兒親子Playgroup課程，專注於幼兒早期教育發展與親子關係建立。我們在九龍黃埔、香港島康怡以及新界粉嶺設有分校，期待與您的寶貝一同成長。">
+    <meta name="keywords" content="幼兒教育, 親子課程, 學前培訓, 早期幼教, 九龍黃埔分校, 香港島康怡分校, 新界粉嶺分校">
+    <title>培育教育中心 - 位置地圖</title>
+</head>
+    <body onload="initMap()">
+
+    <header class="header">
+        <div class="headers"><img src="./images/logo.png" alt="培育教育中心標誌"></div>  
+        <div class="h1"><h1>培育教育中心 - 分校位置地圖</h1></div> 
+    </header>
+
+    <nav aria-label="Main Navigation">      
+        <ul class="main-menu">
+            <li class="first-list-item" id="main-page"><a href="./index.html">首頁</a></li>
+            <li><a href="./about.html#about">關於我們</a></li>
+            <li><a href="./service.html">服務</a></li>
+            <li><a href="mailto:someone@example.com">聯絡我們</a></li> 
+            <li><a href="https://www.facebook.com/story.php?story_fbid=122139943928255915&id=61557677459730&mibextid=qi2Omg&rdid=omp77r7YEp0Pegwx"><i class="fa-brands fa-facebook"></i></a></li> 
+            <li><a href="https://www.instagram.com/accounts/login"><i class="fa-brands fa-square-instagram" style="color: #d93f3f;"></i></a></li>
+            <li><a href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin" style="color: #63E6BE;"></i></a></li>  
+            <li><a href="https://www.youtube.com/signin"><i class="fa-brands fa-square-youtube" style="color: #d73757;"></i></a></li>
+            <li><a href="https://web.wechat.com"><i class="fa-brands fa-weixin" style="color: #63E6BE;"></i></a></li>  
+            <!-- <li><a href="https://ssl.zc.qq.com/v3/index.html"><i class="fa-brands fa-qq" style="color: #ff3d51;"></i></a></li>   -->
+            <li><a href="https://api.whatsapp.com/send?phone=97765879&text=報名查詢幼兒體適能"><i class="fa-brands fa-square-whatsapp" style="color: #63E6BE;"></i></a></li>
+            <li><a href="./navigation.html"><img src="./images/navigation.png" alt="Navigation" class="navigation">網站導航</a></li>
+            <button class="button" onclick="speakContent()">朗讀網頁內容</button> 
+            <li><a href="./login.html"><i class="fa-solid fa-user" style="color: #3366cc;"></i>登錄</a></li>
+            <li class="last-list-item"><a href="./register.html"><i class="fa-solid fa-user-plus" style="color: #33cc66;"></i>注冊</a></li> 
+        </ul>
+    </nav>
+
+    <main>
+        <P></P>
+        <p></p>
+        <section>
+            <h2>培育教育中心位置</h2>
+            <div id="map" style="height: 500px; width: 100%;"></div>
+        </section>
+    </main>
+
+    <p></p>
+    <p></p>
+    <footer>  
+        <address>
+            <ul>
+                <li>地址：九龍黃埔111號 / 香港島康怡222號 / 新界粉嶺333號</li>
+                <li>電話：852-97765879</li>
+                <li>電郵：<a href="mailto:customerservice@abc.com">customerservice@abc.com</a></li>
+                <li>網址：<a href="#">http://abc.com</a></li>
+            </ul>
+        </address>
+    </footer>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAnnb6IknigBOdPbOIVNteiv9WPIOEqEc&callback=initMap"></script>
+
+
+    <script src="./javascript/javascript.js"></script>
+
+</body>
+</html>

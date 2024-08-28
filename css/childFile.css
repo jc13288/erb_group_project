@@ -1,0 +1,562 @@
+
+
+*{
+    margin: 0px;
+    padding:0px;
+    /* box-sizing: border-box; */
+    box-sizing: border-box;
+   /* border: 1px solid red;   */
+}
+
+html{
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1;
+}
+
+.header {
+display: flex;
+justify-content: left;
+align-items: center;
+/* background-color: #333; */
+/* color: #fff; */
+background: linear-gradient(
+    to right, 
+     rgba(255,255,255,1) 15%,
+     rgba(180,118,254,1) 100%
+     );
+     color: #333;
+    padding: 10px 20px;
+}
+.headers{
+    max-width: 150px;
+    margin-right: 10px;
+}
+
+.headers img{
+    height: 150px;
+    width: 150px;
+    /* margin-left: 10px; */
+}
+
+.header .h1{
+    margin-left: 10px;
+    width: 400px;
+  }
+
+h1{
+    color: #83bca7;
+}
+
+.header .space{
+     width: 50px;
+     height: 50px;
+     margin-right: 10px;
+}
+
+ ul {
+    list-style-type: none;
+}
+
+ a{
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    /* display: block; */
+}
+
+ a:hover{
+    color: coral;
+    text-decoration: underline;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+p{
+    margin: 20px;
+}
+
+hr {
+    border: none;
+    height: 5px;
+    width: 97%;
+    background-color: yellow;
+    margin-left:10px;
+    margin-bottom: 20px;
+}
+
+.header {
+    background-color:  #f4f4f4;
+    padding: 10px;
+    padding-top: 10px;
+}
+
+.main-menu{
+    display : flex;
+    gap: 37px;
+    padding: 10px ;
+    background-color: #f4f4f4;
+
+}
+
+.main-menu:hover{
+    background-color:  coral;
+}
+
+.main-menu>li{
+    margin-top: 20px;
+}
+
+.main-menu a{
+    font-size: 16px;
+}
+
+.main-menu a:hover{
+    background-color: gold;
+}
+
+.main-menu .navigation{
+    width: 15px;
+    height: 15px;
+}
+
+.main-menu .button {
+    background-color: #8b30ed;
+    /*绿色*/border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s linear;
+    border-radius: 8px;
+}
+
+.main-menu .button:hover{
+    color:#333;
+    background-color: #f2e8ff; /* 绿色 */
+}
+
+/* .fa-check, .fa-facebook{
+    color:blue;
+    font-size: 20px;
+}
+ .fa-square-instagram, .fa-linkedin, .fa-square-youtube, .fa-weixin, .fa-qq, .fa-square-whatsapp{
+    font-size: 20px;
+ }  */
+
+
+.main {
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.main .imgs{
+    max-width: 800%;
+   
+}
+
+.main img{
+    width: 100%;
+    transition: transform .4s ease 0s;
+}
+
+.main img:hover{
+    transform: scale(1.1);
+}
+
+.main .section{
+    flex: 1;
+    line-height: 2;
+}
+
+.main .section{
+    flex: 1;
+    line-height: 2;
+}
+
+/* */
+.section{
+    /* display: flex; */
+    display: block;
+    /* flex-direction: column; */
+    justify-content:space-between;
+    gap: 30px;
+    flex-wrap: wrap; 
+    margin: 20px auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 800px;
+    height: 800px;
+    overflow-y: auto;
+}
+
+
+/* .PicList{} */
+.birdNest{
+    width: 830px;
+    height: 1220px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis :0;
+    background-color: #f4f4f4;
+    background: url("../images/childs/bgImage.jpg") center/cover no-repeat;
+    /* background-image: url(../images/childs/bgImage.jpg); */
+    /* background-image: url('../image/birdNest.png'); */
+    /* background-repeat: repeat; */
+     /* background-position: left top;  */
+    /*Adjust as needed */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+ .pic {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .pic .imgs{
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    transition: transform .4s ease 0s;
+    position: absolute;
+    top: 12%;
+    left: 20%;
+    /* transform: translate(-50%, -50%); */
+  }
+
+
+  .pic .text .yearOld{
+    position: absolute;
+    top: 120px; 
+    left: 130px; /* Adjust this value to move the text left or right */
+    background-color: #fff; /* Optional: Adds a background color to improve readability */
+    padding: 5px; /* Optional: Adds padding around the text */
+    border-radius: 4px; /* Optional: Rounds the corners of the text background */
+    top: 25%
+  }
+
+/* gallery */
+  .gallery{
+    background: url(../images/childs/gallery-bg.png) no-repeat;
+    background-size: cover;   
+    margin-bottom: 10px;
+  }
+  
+  .gallery .gallery-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+  
+  .gallery .gallery-container .boxs{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    /* margin: 10px; */
+  }
+  
+  .gallery .gallery-container .boxs img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .gallery .gallery-container .boxs:hover img{
+    transform: scale(1.2);
+  }
+  
+  .gallery .gallery-container .boxs .icon{
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.4);
+    display: none;
+  }
+
+  .gallery .gallery-container .boxs .icon i{
+    font-size: 6rem;
+    color: #fff;
+  }
+
+  .gallery .gallery-container .boxs:hover .icon{
+    display: flex;
+  }
+/* end */
+
+.main aside{
+    width: 300px;
+
+}
+
+.main aside h2{
+    background-color: coral;
+    padding: 10px;
+    color:white;
+    margin-bottom: 0px;
+    line-height: 2;
+}
+
+.main aside li{
+    padding:10px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #b1adad;
+    line-height: 2;
+    
+}
+
+footer{
+background: linear-gradient(
+    to right, 
+     rgba(255,255,255,1) 15%,
+     rgba(180,118,254,1) 100%
+     );
+     color: #333;
+    /* padding: 10px 20px; */
+}
+
+footer address ul{
+    display : flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 37px;
+    padding: 10px ;
+}
+
+@media(max-width: 768px){
+    
+    .header{
+        padding:20px;
+    }
+
+    .header h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .main-menu{
+        flex-direction: column;
+        text-align:center;
+    }
+
+    .main-menu li.first-list-item{
+        line-height: 3;
+    }
+
+    .main-menu li{
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 7px;
+    }
+
+    .main-menu li.last-list-item{
+        border: none;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    .section {
+       /* display:flex; */
+       width:100%;
+       text-align: center;
+       margin: 0 auto; /* 横向居中对齐 */
+        box-sizing: border-box; /*确保 padding 不影响总宽度 */
+        
+    }
+
+    .birdNest {
+        /* display:flex; */
+        width: 80%; /* 使用百分比宽度以适应容器 */
+        /* height:1220px;    调整高度以适应容器的总高度 */
+        flex-grow: 1;
+        flex-shrink: 1; 
+        flex-basis: 0;
+        background-color: #f4f4f4;
+        /* background-repeat: repeat;
+        background-position: left top; */
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .birdNest .pic .imgs{
+        width: 100px;
+        height: auto;
+      }
+
+      .gallery .gallery-container .boxs{
+        width: 80%;
+        /* height: 100%; */
+        position: relative;
+        overflow: hidden;
+        /* margin: 10px; */
+        margin-left: 40px;
+      }
+      
+      .gallery .gallery-container .boxs img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    
+
+    .main aside{
+        width: 100%;
+    }
+
+    /* .fa-check, .fa-facebook{
+        color:blue;
+        font-size: 50px;
+    }
+
+    .fa-square-instagram, .fa-linkedin, .fa-square-youtube, .fa-weixin, .fa-qq, .fa-square-whatsapp{
+        font-size: 50px;
+    } */
+
+    footer address ul{
+        flex-direction: column;
+        text-align:center;
+    }
+
+    /* .gallery .gallery-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 2rem;
+    } */
+
+    /* .gallery .gallery-container .boxs{
+        /* height: 100%;
+        position: relative;
+        overflow: hidden; */
+        /* margin: 10px; */
+        /* flex-direction: column-reverse; */
+        /* display : flex; */
+        /* flex-direction: row ; */
+  /*  } */
+
+  /* .gallery .gallery-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+
+  .gallery .heading .gallery-container{
+    display: flex;
+  } */
+
+}
+
+@media(min-width: 769px) and (max-width: 2400px){
+
+     /* .section {
+        width: 100px;
+        height: 100px;
+        margin: 0px 20px;
+        perspective: 10000px;
+     } */
+
+
+    
+        .box {
+            width: 100px;
+            height: 100px;
+            perspective: 10000px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition:all 10s ease 0s;
+            animation: rotateBox 10s linear infinite;
+        }
+        
+        @keyframes rotateBox {
+            0% {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            100% {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+        
+        .box p {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+        }
+        
+        .box p:nth-child(1) {
+            background-color: rgba(219, 56, 211, 0.486);
+            /* 前面 */
+            transform: translateZ(50px);
+        }
+        
+        .box p:nth-child(2) {
+            background-color: rgba(42, 128, 199, 0.486);
+            /* 顶面 */
+            transform: rotateX(90deg) translateZ(50px);
+        }
+        
+        .box p:nth-child(3) {
+            background-color: rgba(56, 219, 83, 0.486);
+            /* 背面 */
+            transform: rotateX(180deg) translateZ(50px);
+        }
+        
+        .box p:nth-child(4) {
+            background-color: rgba(213, 216, 32, 0.486);
+            /* 底面 */
+            transform: rotateX(-90deg) translateZ(50px);
+        }
+        
+        .box p:nth-child(5) {
+            background-color: rgba(236, 82, 102, 0.486);
+            /* 侧面 */
+            transform: rotateY(90deg) translateZ(50px);
+        }
+        
+        .box p:nth-child(6) {
+            background-color: rgba(119, 17, 236, 0.486);
+            /* 侧面 */
+            transform: rotateY(-90deg) translateZ(50px);
+        }
+/* 
+        .birdNest {
+            width: 830px;
+            height: 1220px;
+        }
+
+        .birdNest .pic .imgs{
+            width: 100%;
+            height: auto;
+        } */
+
+
+ 
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-hk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/logobga.jpg">
+    <link rel="stylesheet" href="./css/register.css">
+    <meta name="description" content="培育教育中心提供優質的幼兒親子Playgroup課程，幫助孩子平穩過渡到學前教育階段。我們在九龍黃埔、香港島康怡和新界粉嶺設有分校。"> 
+    <meta name="keywords" content="培育教育中心, 幼兒親子Playgroup課程, 學前教育, 九龍黃埔, 香港島康怡, 新界粉嶺">
+    <title>登記頁面</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <div class="headers"><img src="./images/logo.png" alt=""></div>  
+        <div class="h2"><h2>登記頁面</h2></div> 
+        </div>
+        <form id="myForm">
+            <div class="parents">
+                    <div class="form-group">
+                        <label for="login">登記名稱</label>
+                        <input 
+                            type="text" 
+                            id="login" 
+                            name="login"
+                            placeholder="輸入登記名稱" 
+                            minlength="6"
+                            maxlength="10"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">登記密碼</label>
+                        <input  
+                            type="password" 
+                            id="password" 
+                            name="password"
+                            placeholder="輸入登記密碼"
+                            minlength="8"
+                            maxlength="15"
+                            required 
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="ReCheckPassword">確認密碼</label>
+                        <input  
+                            type="password" 
+                            id="ReCheckPassword" 
+                            name="ReCheckPassword"
+                            placeholder="確認密碼"
+                            minlength="8"
+                            maxlength="15"
+                            required 
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="ParentName">家長姓名</label>
+                        <input 
+                            type="text" 
+                            id="ParentName" 
+                            name="ParentName"
+                            placeholder="家長姓名" 
+                            minlength="6"
+                            maxlength="10"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" name="gender" id="male" value="male" checked/>
+                        <label for="male">男</label>
+                        <input type="radio" name="gender" id="female" value="female"  />
+                        <label for="female">女</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">電郵</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email"
+                            placeholder="輸入登記電郵"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">聯絡電話</label>
+                        <input 
+                            type="tel" 
+                            id="phone"
+                            placeholder="聯絡電話"
+                            name="phone"
+                            required
+                            minlength="8"
+                            maxlength="15"
+                            pattern="[0-9]{8,15}"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <label for="address">地址</label>
+                            <textarea 
+                                id="address"
+                                placeholder="地址"
+                                name="address"
+                                required
+                                rows="6"
+                                cols="24"
+                            ></textarea>
+                        </div>
+                    </div>
+            </div>
+            <div class="child">
+                    <div class="form-group">
+                            <label for="BBName">幼兒姓名</label>
+                            <input 
+                                type="text" 
+                                id="BBName" 
+                                name="BBName"
+                                placeholder="幼兒姓名" 
+                                minlength="6"
+                                maxlength="10"
+                                required
+                            />
+                    </div>
+                        <div class="form-group">
+                            <input type="radio" name="genders" id="Bmale" value="male" checked/>
+                            <label for="Bmale">男</label>
+                            <input type="radio" name="genders" id="Bfemale"  value="Female"/>
+                            <label for="Bfemale">女</label>
+                        </div>
+                        <div>
+                            <label for="Birthdate">小朋友出生日期</label>
+                            <input type="date" id="Birthdate" name="Birthdate" required />
+                          </div>
+                </div>
+
+
+                <div class="btn-group">
+                    <div class="form-group">
+                        <input type="submit" value="登記">
+                    </div>
+                    <div class="form-group">
+                        <!-- <input type="submit" value="重置輸入栅" onclick="resetInput()"> -->
+                        <button type="button" onclick="resetInput()">重置輸入欄</button>
+                    </div>
+                </div>
+
+
+            <div class="link-group">
+                <div> <a href="./login.html">回登入頁面?</a></div>
+                <div> <a href="./index.html">回主頁</a></div>
+            </div>
+            <div id="error-message"></div>
+        </form>
+        <script src="./javascript/jsForm.js"></script>
+</body>
+</html>

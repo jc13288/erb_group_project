@@ -1,0 +1,410 @@
+*{
+    margin: 0px;
+    padding:0px;
+    /* box-sizing: border-box; */
+    box-sizing: border-box;
+   /* border: 1px solid red;   */
+}
+
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* background-color: #333; */
+    /* color: #fff; */
+    background: linear-gradient(
+        to right, 
+         rgba(255,255,255,1) 15%,
+         rgba(180,118,254,1) 100%
+         );
+         color: #333;
+        /* padding: 10px 20px; */
+    }
+
+    .headers{
+        max-width: 150px;
+        margin-right: 10px;
+    }
+
+    .headers img{
+        height: 150px;
+        width: 150px;
+        /* margin-left: 10px; */
+    }
+    
+    .header .h1{
+        margin-left: 10px;
+        width: 400px;
+      }
+
+h1{
+    color: #83bca7;
+}
+
+
+ ul {
+    list-style-type: none;
+}
+
+ a{
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    /* display: block; */
+}
+
+ a:hover{
+    color: coral;
+    text-decoration: underline;
+}
+
+
+h2{
+    margin-bottom: 20px;
+}
+
+p{
+    margin: 20px;
+}
+
+.header {
+    background-color:  #f4f4f4;
+    padding: 30px;
+    padding-top: 10px;
+}
+
+.main-menu{
+    display : flex;
+    gap: 37px;
+    padding: 10px ;
+    background-color: #f4f4f4;
+    
+}
+
+.main-menu:hover{
+    background-color:  coral;
+}
+
+.main-menu>li{
+    margin-top: 20px;
+}
+
+.main-menu a{
+    font-size: 16px;
+}
+
+.main-menu a:hover{
+    background-color: gold;
+}
+
+.main-menu .navigation{
+    width: 15px;
+    height: 15px;
+}
+
+.main-menu .button {
+    background-color: #8b30ed;
+    /*绿色*/border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s linear;
+    border-radius: 8px;
+}
+
+.main-menu .button:hover{
+    color:#333;
+    background-color: #f2e8ff; /* 绿色 */
+}
+
+.fa-check, .fa-facebook{
+    color:blue;
+    font-size: 20px;
+}
+ .fa-square-instagram, .fa-linkedin, .fa-square-youtube, .fa-weixin, .fa-qq, .fa-square-whatsapp{
+    font-size: 20px;
+ } 
+
+.main {
+    display: flex;
+    gap: 70px;
+    padding: 40px;
+}
+
+.main .imgs{
+    max-width: 800%;
+   
+}
+
+.main img{
+    width: 100%;
+    transition: transform .4s ease 0s;
+}
+
+.main img:hover{
+    transform: scale(1.1);
+}
+
+.main .section{
+    flex: 1;
+    line-height: 2;
+}
+
+/*   */
+.section{
+    /* display: flex; */
+    display: block;
+    /* flex-direction: column; */
+    justify-content:space-between;
+    gap: 30px;
+    flex-wrap: wrap; 
+    margin: 20px auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 800px;
+    height: 800px;
+    overflow-y: auto;
+}
+
+
+/* .PicList{} */
+.birdNest{
+    width: 830px;
+    height: 650px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis :0;
+    background-color: #f4f4f4;
+    /* background-image: url('../image/birdNest.png'); */
+    /* background-repeat: repeat; */
+    /* background-position: left top; Adjust as needed */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+ .pic {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .pic .imgs{
+    width: 310px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    transition: transform .4s ease 0s;
+  }
+
+
+.main aside{
+    width: 300px;
+}
+
+.main aside .parents{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightpink; 
+}
+
+.main aside h2{
+    background-color: coral;
+    padding: 10px;
+    color:white;
+    margin-bottom: 0px;
+    line-height: 2;
+}
+
+.main aside li{
+    padding:10px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #b1adad;
+    line-height: 2;
+    
+}
+
+footer{
+    background: linear-gradient(
+        to right, 
+         rgba(255,255,255,1) 15%,
+         rgba(180,118,254,1) 100%
+         );
+         color: #333;
+        /* padding: 10px 20px; */
+    }
+    
+    footer address ul{
+        display : flex;
+        justify-content:space-around;
+        align-items: center;
+        gap: 37px;
+        padding: 10px ;
+    }
+
+
+
+/*  */
+
+@media(max-width: 768px){
+
+    .header{
+        padding:20px;
+    }
+
+    .header h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .main-menu{
+        flex-direction: column;
+        text-align:center;
+    }
+
+    .main-menu li.first-list-item{
+        line-height: 3;
+    }
+
+    .main-menu li{
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 7px;
+    }
+
+    .main-menu li.last-list-item{
+        border: none;
+    }
+
+
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    .section {
+       /* display:flex; */
+       width:100%;
+       text-align: center;
+       margin: 0 auto; /* 横向居中对齐 */
+        box-sizing: border-box; /*确保 padding 不影响总宽度 */
+        
+    }
+
+    .birdNest, .TempleHeaven, .Bridge {
+        /* display:flex; */
+        width: 100%; /* 使用百分比宽度以适应容器 */
+        height: 200%; /* 调整高度以适应容器的总高度 */
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+        background-color: #f4f4f4;
+        /* background-repeat: repeat;
+        background-position: left top; */
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    .main aside{
+        width: 100%;
+    }
+
+    /*  */
+    .nav .main-menu{
+        display : flex;
+        gap: 70px;
+        padding: 10px;
+        background-color: lightgray;
+    }
+    
+    .nav .main-menu:hover{
+        background-color: lightblue;
+    }
+    
+    
+    .nav .main-menu a{
+        font-size: 20px;
+    }
+    
+    .nav .main-menu a:hover{
+        background-color: lightblue;
+    }
+
+      /*  */
+    .fa-check, .fa-facebook{
+        color:blue;
+        font-size: 35px;
+    }
+
+    .fa-square-instagram, .fa-linkedin, .fa-square-youtube, .fa-weixin, .fa-qq, .fa-square-whatsapp{
+        font-size: 35px;
+    }
+
+    footer address ul{
+        flex-direction: column;
+        text-align:center;
+    }
+
+    
+}
+
+@media(min-width: 769px) and (max-width: 2400px){
+
+    section {
+        width: 100px;
+        height: 100px;
+        margin: 0px 20px;
+        perspective: 10000px;
+    }
+    
+        .box {
+            width: 100px;
+            height: 100px;
+            perspective: 10000px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition:all 10s ease 0s;
+            animation: rotateBox 10s linear infinite;
+        }
+        
+        @keyframes rotateBox {
+            0% {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            100% {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+        
+     
+        .nav .main-menu{
+            display : flex;
+            gap: 70px;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        .nav .main-menu:hover{
+            background-color: coral;
+        }
+        .nav .main-menu a{
+            font-size: 20px;
+        }
+        .nav .main-menu a:hover{
+            background-color: blue;
+        }
+}
